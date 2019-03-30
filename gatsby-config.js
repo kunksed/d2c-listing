@@ -27,6 +27,26 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: `keyRWE7Qi7laER3Bo`, // may instead specify via env, see below
+        tables: [
+          {
+            baseId: `applsEttuh3uLJjE0`,
+            tableName: `Stores`,
+            //tableView: `YOUR_TABLE_VIEW_NAME`, // optional
+            //mapping: { `CASE_SENSITIVE_COLUMN_NAME`: `VALUE_FORMAT` }, // optional, e.g. "text/markdown", "fileNode"
+            tableLinks: [`Reviews`] // optional, for deep linking to records across tables.
+          }, 
+          {
+            baseId: `applsEttuh3uLJjE0`,
+            tableName: `Reviews`,
+            tableLinks: [`Stores`] // optional, for deep linking to records across tables.
+          }
+        ]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
