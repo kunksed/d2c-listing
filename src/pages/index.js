@@ -12,13 +12,12 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div style={{textAlign : 'center'}}>
       <p> Brands for you!</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, alignContent : 'center' }}>
         <Image />
       </div>
       <Listing />
-    </div>
+      
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
