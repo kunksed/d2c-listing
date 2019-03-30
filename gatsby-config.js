@@ -37,7 +37,8 @@ module.exports = {
             tableName: `Stores`,
             //tableView: `YOUR_TABLE_VIEW_NAME`, // optional
             //mapping: { `CASE_SENSITIVE_COLUMN_NAME`: `VALUE_FORMAT` }, // optional, e.g. "text/markdown", "fileNode"
-            tableLinks: [`Reviews`] // optional, for deep linking to records across tables.
+            tableLinks: [`Reviews`], // optional, for deep linking to records across tables.
+            queryName: ''
           }, 
           {
             baseId: `applsEttuh3uLJjE0`,
