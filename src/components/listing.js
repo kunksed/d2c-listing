@@ -33,12 +33,9 @@ export default () => (
       }      
       `}
       render={data => (
-        <ol>
-            {data.allAirtable.edges.map(store =>
-            <li key={store.node.data.Name}> Hi {store.node.data.Name}</li>
+            data.allAirtable.edges.map(store =>
+            <StoreCard StoreData={store.node.data}/>
             )
-            }
-        </ol>
       )}
     />
   )
