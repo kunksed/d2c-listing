@@ -30,7 +30,7 @@ export default () => (
       `}
       render={data => (
             data.allAirtable.edges.map(store =>
-            <StoreCard StoreData={store.node.data}/>
+            <StoreCard StoreData={store.node.data} />
             )
       )}
     />
