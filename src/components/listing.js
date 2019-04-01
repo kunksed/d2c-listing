@@ -22,13 +22,6 @@ export default () => (
                 Instagram
                 Retail
                 HQ
-                Comment
-                Support
-                User
-                Delivery
-                Value_for_Money
-                Quality
-                Aggregate_Review
               }
             }
           }

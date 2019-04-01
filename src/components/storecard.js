@@ -19,7 +19,14 @@ export default (props) => {
                     </div>
                     
                     <div class="rating">
-                        
+                       <StarRatings
+                            rating={2.5}
+                            starRatedColor="#F5A623"
+                            numberOfStars={5}
+                            starDimension="20px"
+                            starSpacing="2px"
+                            name='rating'
+                        />
                     </div>
                     
                     <div class="name">
