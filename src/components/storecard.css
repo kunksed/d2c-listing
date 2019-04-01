@@ -1,0 +1,61 @@
+.card {
+    background: rgba(216,216,216,0.33);
+    box-shadow: 1px 2px 7px 0 rgba(0,0,0,0.3);
+    width : 30vw;
+    margin : auto;
+    padding-bottom : 20px;
+    margin-top : 40px;
+  }
+  
+  .industry {
+    background: #6FFFB0;
+    font-family: HelveticaNeue-Bold;
+    font-size: 20px;
+    color: #7D4CDB;
+    text-align: center;
+    line-height: 15px;
+    border-radius : 20px;
+    padding : 5px 30px;
+    position: relative;
+    bottom: 10px;
+    background: #6FFFB0;
+    box-shadow : 0px 2px 4px rgba(0,0,0,0.3)
+  }
+  
+  .logo {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin : 3vh;
+  }
+  
+  .rating {
+    display : flex;
+    justify-content: center;
+  }
+  
+  .name {
+    font-family: HelveticaNeue-Bold;
+    font-size: 30px;
+    color: #9216FF;
+    text-align: center;
+    padding : 3vh 6vh 6vh;
+  }
+  
+  .category {
+    display : flex;
+    margin-left: 5vw;
+    margin-right : 5vw;
+    justify-content:space-between;
+  }
+  
+  .category span {
+    background: #9060EB;
+    border-radius: 10px;
+    font-family: HelveticaNeue-Bold;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding : 5px 10px;
+    
+  }

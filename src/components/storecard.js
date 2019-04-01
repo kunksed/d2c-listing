@@ -1,25 +1,36 @@
 import React from "react"
 import StarRatings from 'react-star-ratings'; // https://www.npmjs.com/package/react-star-ratings
+import './storecard.css'
+
 
 
 export default (props) => {
+        console.log(props.StoreData.Logo.map(data => data.url))
         return(
-           <div>
-            
-            <span style = {{fontWeight : 'bold', fontSize : '30px'}}> 
-                {props.StoreData.Name} 
-            </span> 
-            <StarRatings
-                rating={2.403}
-                starDimension="15px"
-                starSpacing="1px"
-                starRatedColor="gold"
-            />
-
-            <p> 
-                {props.StoreData.Industry} 
-            </p>
-
-           </div>
+                <div class="card">
+                    <div style={{"text-align" : "center"}}>
+                        <span class="industry">
+                        {props.StoreData.Industry}
+                        </span>
+                    </div>
+                    
+                    <div class="logo">
+                        <img style={{"height" : "10vh"}} src={props.StoreData.Logo.map(data => data.url)} alt ={props.StoreData.Name}></img>
+                    </div>
+                    
+                    <div class="rating">
+                        
+                    </div>
+                    
+                    <div class="name">
+                        <span> {props.StoreData.Name} </span>
+                    </div>
+                        
+                    <div class="category">
+                        <span> Ortho </span>
+                        <span> Memory Foam </span>
+                        <span> Mattress </span>
+                    </div>
+                </div>
         );
       }

@@ -12,6 +12,9 @@ export default () => (
             node {
               data {
                 Name
+                Logo {
+                  url
+                }
                 Industry
                 Subscription
                 Website

@@ -12,8 +12,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <p> Brands for you!</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, alignContent : 'center' }}>
+      <div style={{ maxWidth: `300px`, margin : `auto`}}>
         <Image />
       </div>
       <Listing />
