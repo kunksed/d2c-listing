@@ -5,7 +5,6 @@ import './storecard.css'
 
 
 export default (props) => {
-        console.log(props.StoreData.Logo.map(data => data.url))
         return(
                 <div class="card">
                     <div style={{"text-align" : "center"}}>
@@ -34,9 +33,9 @@ export default (props) => {
                     </div>
                         
                     <div class="category">
-                        <span> Ortho </span>
-                        <span> Memory Foam </span>
-                        <span> Mattress </span>
+                        {props.StoreData.Categories.slice(0, 3).map(cat => 
+                            <span> {cat} </span>)}
+                        
                     </div>
                 </div>
         );

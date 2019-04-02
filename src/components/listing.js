@@ -16,6 +16,7 @@ export default () => (
                   url
                 }
                 Industry
+                Categories
                 Subscription
                 Website
                 Facebook
